@@ -1,0 +1,132 @@
+@import url(' https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+body {
+
+    font-family: 'JetBrains+Mono', monospace;
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+
+}
+
+.display {
+
+    background: transparent;
+    color:white;
+    padding: 10px;
+    text-align: right;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 2rem;
+    min-height: 1.5em;
+    line-height: 1.5;
+
+}
+
+.display-container {
+
+    background: #1e1e1e;
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    border-radius: 8px;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;  
+
+}
+
+.calc {
+
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
+
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 15%;
+    width: 500px;
+    height: 600px;
+    
+}
+
+.grid-container {
+
+    display: grid;
+    /* Creates 4 columns of exactly equal width */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; /* Equal spacing between buttons */
+    justify-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+button {
+
+    padding: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.2rem; /* Large font size */
+    
+    /* Crucial: Takes up 100% of its equal-sized grid cell */
+    width: 65%; 
+
+    
+    /* Makes buttons perfectly square (adjust height as you like) */
+    aspect-ratio: 1/ 1; 
+    
+    /* Centers text perfectly inside the button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.15s ease;
+
+}
+
+button:hover {
+
+    opacity: 0.75;
+}
+
+.btn-numbers {
+    background: #333;
+    color: white;
+}
+
+.btn-operators {
+    background: goldenrod;
+    color: white;
+}
+
+.btn-notation {                                                                                                                                                                                         
+    background: #555;                                                                                                                                                                                   
+    color: white;                                                                                                                                                                                       
+}                                                                                                                                                                                                       
+                                                                                                                                                                                                            
+.btn-equal {
+
+    grid-column: span 2;                                                                                                                                                                                
+    aspect-ratio: unset;                                                                                                                                   
+    border-radius: 40px;                                                                                                                                  
+    justify-content: center;
+
+}                                                                                                                                     
