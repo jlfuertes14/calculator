@@ -4,7 +4,7 @@ A clean, functional browser-based calculator built with vanilla HTML, CSS, and J
 
 ## 🔗 Live Demo
 
-> Open `calculator.html` directly in your browser — no build step required.
+> Open `index.html` directly in your browser — no build step required.
 
 ## ✨ Features
 
@@ -20,7 +20,7 @@ A clean, functional browser-based calculator built with vanilla HTML, CSS, and J
 
 ```
 calculator/
-├── calculator.html     # Markup & layout
+├── index.html          # Markup & layout
 ├── calculatorProj.js   # All calculator logic
 └── style.css           # Styling
 ```
@@ -44,8 +44,8 @@ Button clicks are handled by a single `inputButtons()` function using a `switch`
 git clone https://github.com/jlfuertes14/calculator.git
 
 # Open in browser
-start calculator.html   # Windows
-open calculator.html    # macOS
+start index.html   # Windows
+open index.html    # macOS
 ```
 
 ## 📚 Built With
